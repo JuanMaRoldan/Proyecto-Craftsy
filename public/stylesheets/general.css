@@ -11,6 +11,7 @@
 }
 body {
     background-image: url('/images/bg-2.png');
+    font-family: "Roboto";
 }
 a{
     text-decoration: none;
