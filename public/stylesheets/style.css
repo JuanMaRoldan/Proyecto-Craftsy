@@ -1,9 +1,3 @@
-@font-face {
-    src: url("/fonts/CRENZO.ttf") format("truetype");
-    font-family: "Crenzo";
-    font-style: "normal";
-    font-weight: normal;
-}
 @import './variables.css';
 @import './general.css';
 @import './header.css';
