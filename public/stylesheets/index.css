@@ -1,3 +1,119 @@
-body.home {
-    background-color: blue;
+/* SECTION PRODUCTS */
+.index__products{
+    align-items: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%;
+}
+.index__products__product{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    width: 300px;
+}
+.index__products__product img{
+    width: 100%;
+}
+.index__products__product h4{
+    margin: 10px 0;
+}
+.index__products__product__more{
+    background-color: var(--colorRojo);
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+    width: 100px;
+}
+/* ASIDE DE TUTORIALES Y PUBLICIDAD */
+.index__tutorials{
+    margin-top: 30px;
+}
+.index__tutorials h3 , .index__advertising h3{
+    background-color: white;
+    border: 1px solid var(--colorBorde);
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.index__tutorials__tutorial{
+    align-items: center;
+    background-color: white;
+    border: 1px solid var(--colorBorde);
+    border-bottom: none;
+    display: flex;
+    padding: 10px;
+}
+.index__tutorials__tutorial:last-child{
+    border-bottom: 1px solid var(--colorBorde);
+}
+.index__tutorials__tutorial p{
+    margin-left: 10px;
+}
+.index__advertising{
+    margin-top: 30px;
+}
+.index__advertising__add{
+    background-color: white;
+    padding: 0 10px;
+    border: 1px solid var(--colorBorde);
+}
+.index__advertising__add img{
+    margin: 10px 0;
+    width: 100%;
+}
+
+/*MOBILE LARGE */
+@media(min-width:425px){
+    .index main{
+        padding: 0 30px;
+    }
+}
+
+/* TABLETS */
+@media(min-width:768px){
+
+    .index main{
+        padding: 0 50px;
+    }
+    /* Section Products */
+    .index__products{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .index aside{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .index__tutorials ,
+    .index__advertising {
+        width: 320px;
+    }
+}
+/* LAPTOPS */
+@media(min-width:1024px){
+    .index{
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    .index main{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: space-between;
+    }
+    .index__products{
+        width: 800px;
+    }
+    .index__products__product{
+        width: 380px;
+    }
+    .index aside{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 }
