@@ -4,8 +4,9 @@
 .register section{
     background-color: white;
     border-radius: 10px;
+    box-shadow: 5px 5px 10px grey;
     margin: 30px auto;
-    padding: 10px;
+    padding: 20px;
     width: 100%;
 }
 .register h1{
@@ -17,6 +18,7 @@
 }
 .register__form-box{
     margin-bottom: 20px;
+    width: 100%;
 }
 .register h4{
     margin-bottom: 10px;
@@ -47,7 +49,14 @@
 }
 
 @media(min-width:768px) {
-
+    .register article{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .register article .register__form-box{
+        width: 48%;
+    }
 }
 @media(min-width:1024px){
     .register section{
