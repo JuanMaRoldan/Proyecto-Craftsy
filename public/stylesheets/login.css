@@ -1,0 +1,65 @@
+.login main{
+    padding: 0 20px;
+}
+.login section{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px grey;
+    margin: 30px auto;
+    padding: 20px;
+    width: 100%;
+}
+.login h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+.login form {
+    margin-top: 30px;
+}
+.login__form-box{
+    margin-bottom: 20px;
+    width: 100%;
+}
+.login h4{
+    margin-bottom: 10px;
+}
+.login__form-input, .login__form-select{
+    margin: 10px 0 0;
+    padding: 10px 5px;
+    width: 100%;
+}
+.login__text-error{
+    color: red;
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+.login__radio-box{
+    margin: 0 0 10px 5px;
+}
+.login__center{
+    text-align: center;
+}
+.login button{
+    background-color: steelblue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+@media(min-width:768px) {
+    .login article{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .login article .login__form-box{
+        width: 48%;
+    }
+}
+@media(min-width:1024px){
+    .login__center section{
+        width: 60%;
+    }
+}
