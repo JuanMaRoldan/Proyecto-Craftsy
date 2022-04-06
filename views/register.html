@@ -7,7 +7,7 @@
     <title>Craftsy | Register</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
-<body>
+<body class="register">
     <header>
         <div class="header__logo">
             <a href="/"><img src="/images/logo.png" alt=""></a>
@@ -27,76 +27,84 @@
     <main>
         <section>
             <h1>Bienvenido</h1>
+                <hr>
             <form action="">
-                <div class="form-box">
+            <article>
+                <div class="register__form-box">
                     <label for="name">Nombre</label>
-                    <input type="text"name ="name" id="name" placeholder="Escribí tu nombre">
-                    <span>Obligatorio</span>
+                    <input class="register__form-input" type="text"name ="name" id="name" placeholder="Escribí tu nombre">
+                    <span class="register__text-error">Obligatorio</span>
                 </div>
-                <div class="form-box">
+                <div class="register__form-box">
                     <label for="email">E-Mail</label>
-                    <input type="email"name ="email" id="email" placeholder="Escribí tu Email">
-                    <span>Obligatorio</span>
+                    <input class="register__form-input" type="email"name ="email" id="email" placeholder="Escribí tu Email">
+                    <span class="register__text-error">Obligatorio</span>
                 </div>
-                <div class="form-box">
+                <div class="register__form-box">
                     <label for="password">Contraseña</label>
-                    <input type="password"name ="password" id="password" placeholder="Escribí tu Contraseña">
-                    <span>Obligatorio</span>
+                    <input class="register__form-input" type="password"name ="password" id="password" placeholder="Escribí tu Contraseña">
+                    <span class="register__text-error">Obligatorio</span>
                 </div>
                 <div>
                     <h4>País de Nacimiento</h4>
-                    <div class="form-box">
-                        <select name="pais" id="pais">
+                    <div class="register__form-box">
+                        <select class="register__form-select" name="pais" id="pais">
                             <option value="" hidden selected>Seleccione Uno</option>
                             <option value="ar">Argentina</option>
                             <option value="br">Brasil</option>
                             <option value="uy">Uruguay</option>
                             <option value="ch">Chile</option>
                         </select>
-                        <span>Obligatorio</span>
+                        <span class="register__text-error">Obligatorio</span>
                     </div>    
                 </div>
-                <div>
+                <div class="register__form-box">
                     <h4>Género</h4>
-                    <div>
-                        <input type="radio" name="genero" id="masculino" value="m">
+                    <div class="register__radio-box">
+                        <input class="" type="radio" name="genero" id="masculino" value="m">
                         <label for="masculino">Masculino</label>
-                    </div>                <div>
-                        <input type="radio" name="genero" id="femenino" value="f">
+                    </div>
+                    <div class="register__radio-box">
+                        <input class="" type="radio" name="genero" id="femenino" value="f">
                         <label for="femenino">Femenino</label>
-                    </div>                <div>
-                        <input type="radio" name="genero" id="nodice" value="n">
+                    </div>
+                    <div class="register__radio-box">
+                        <input class="" type="radio" name="genero" id="nodice" value="n">
                         <label for="nodice">Prefiero no Decirlo</label>
                     </div>    
                 </div>
-                <div>
-                    <h4>Hobbier</h4>
-                    <div>
-                        <input type="checkbox" name="hobbies" id="guitarra" value="g">
+                <div class="register__form-box">
+                    <h4>Hobbies</h4>
+                    <div class="register__radio-box">
+                        <input class="" type="checkbox" name="hobbies" id="guitarra" value="g">
                         <label for="guitarra">Guitarra</label>
                     </div>
-                    <div>
-                        <input type="checkbox" name="hobbies" id="futbol" value="f">
+                    <div class="register__radio-box">
+                        <input class="" type="checkbox" name="hobbies" id="futbol" value="f">
                         <label for="futbol">Futbol</label>
                     </div>
-                    <div>
-                        <input type="checkbox" name="hobbies" id="tenis" value="n">
+                    <div class="register__radio-box">
+                        <input class="" type="checkbox" name="hobbies" id="tenis" value="n">
                         <label for="tenis">Tenis</label>
                     </div>
-                    <div>
-                        <input type="checkbox" name="hobbies" id="programacion" value="p">
+                    <div class="register__radio-box">
+                        <input class="" type="checkbox" name="hobbies" id="programacion" value="p">
                         <label for="programacion">Programación</label>
                     </div>
                 </div>
-                <div>
+            </article>
+                <div class="register__form-box">
                     <h4>Dejanos tu Comentario</h4>
-                    <textarea name="comentario" id="comentario" cols="30" rows="10" style="resize:none"></textarea>
+                    <textarea class="register__form-input" name="comentario" id="comentario" cols="30" rows="10" style="resize:none"></textarea>
                 </div>
-                <input type="checkbox" name="terminos" id="terminos">
-                <label for="terminos">Terminos y Condiciones</label>
-                <button type="submit">Regitrarme</button>
-                <button type="button">Cancelar</button>
-
+                <div class="register__form-box register__center">
+                    <input class="register__form-input" type="checkbox" name="terminos" id="terminos">
+                    <label for="terminos">Términos y Condiciones</label>
+                </div>
+                <div class="register__form-box register__center">
+                    <button type="submit">Regitrarme</button>
+                    <button type="button">Cancelar</button>
+                </div>
             </form>
         </section>
     </main>
