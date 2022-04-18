@@ -20,10 +20,10 @@ app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-//app.use('/', indexRouter);
+app.use('/', indexRouter);
 //app.use('/users', usersRouter);
 
-app.get('/',(req,res) => res.sendFile(path.resolve(__dirname,'views','index.html')))
+//app.get('/',(req,res) => res.sendFile(path.resolve(__dirname,'views','index.html')))
 app.get('/login',(req,res) => res.sendFile(path.resolve(__dirname,'views','login.html')))
 app.get('/productCart',(req,res) => res.sendFile(path.resolve(__dirname,'views','productCart.html')))
 app.get('/productDetail',(req,res) => res.sendFile(path.resolve(__dirname,'views','productDetail.html')))
